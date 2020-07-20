@@ -30,14 +30,14 @@
 
 <!----------------------------------- JAVASCRIPTS -------------------------------->
 <script>
-	// Get the video
+  // Get the video
 var video = document.getElementById("intro");
 </script>
 
 <!-------------------------------------- CSS ------------------------------------->
 <style>
 
-	/* Style the video: 100% width and height to cover the entire window */
+  /* Style the video: 100% width and height to cover the entire window */
 #intro {
   position: sticky;
   right: 0;
@@ -122,77 +122,49 @@ html {
 </nav>
 
 <!----------------------- NAV BAR ends here ----------------------->
-
-</head>
-
-<!---------------------------------     HTML codes   --------------------------------->
+<!-- Contact Section -->
 <body>
-	<section>
-<!-- The video --> <div class="w3-container w3-padding-32 w3-center">
-<video autoplay muted loop id="myintro">
-  <source src="alo/intro.mp4" type="video/mp4">
+  <div class="w3-container w3-padding-32" id="contact">
+  
+   <br>
+   <br>
+   <br>
+    <h1 class="w3-xxxlarge w3-center"><b>Contact</b></h1><br>
+    <h3 class="w3-center">Lets get in touch and talk about your next project.</h3><br><br>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- Image of location/map -->
+<div class="w3-container">
+  <!--<img src="/w3images/map.jpg" class="w3-image" style="width:100%">-->
+  <video autoplay muted loop id="myVideo">
+  <source src="Images 1303/contact.mp4" type="video/mp4">
 </video>
-</div>
-<!-- Optional: some overlay text to describe the video -->
- <div class="w3-container w3-padding-32 w3-center">
-  <img src="alo/BOM.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="400" height="400">
-  <br>
-  <br>
-  <p>“This is the pinnacle of human emotions,<br>Warmer than hope. Deeper than despair. It is love.”</p> <br>
-</div>
-</section>
+  <script>
+  // Get the video
+var video = document.getElementById("myVideo");
+</script>
 
-<!--------------------------------- About us page ---------------------->
-<!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">  
-    <h1 class="w3-xxxlarge"><b>About me</b></h1><br>
-    <div class="w3-padding-32">
-      <h3><b>Book of magic</b></h3>
-       <img src="alo/logo.png" alt="Me" class="w3-image" style="display:block;margin:auto" width="250" height="250">
-      <h6>Create me</h6> <br>
-      <p>My full name is Pham Phuong Huyen, but i prefer being called by my artist name Rie.<br>I am illustrator who is passionate, romantic and hopeful about life.</p>
-    </div>
-  </div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
-
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-10 w3-center" id="food">
-    <div class="w3-quarter">
-      <img src="alo/illustration.jpg" alt="Illustration" style="width:100%">
-      <h3>Illustration</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="alo/concept.jpg" alt="Concept" style="width:100%">
-      <h3>Concept</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="alo/chibi.jpg" alt="Chibi" style="width:100%">
-      <h3>Chibi</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-      <p>What else?</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="alo/uiux.jpg" alt="UI/UX" style="width:100%">
-      <h3>UI/UX Design</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-    </div>
-  </div>
 </div>
 </body>
- 
-
 
 
 
 
 <section>
-
+  
 </html>
+
 <!-- Footer -->
+
 <style>
 .footer {
   position: sticky;   /* you can give position as "sticky" or "fixed"  */

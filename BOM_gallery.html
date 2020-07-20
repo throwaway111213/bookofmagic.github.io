@@ -30,14 +30,14 @@
 
 <!----------------------------------- JAVASCRIPTS -------------------------------->
 <script>
-	// Get the video
+  // Get the video
 var video = document.getElementById("intro");
 </script>
 
 <!-------------------------------------- CSS ------------------------------------->
 <style>
 
-	/* Style the video: 100% width and height to cover the entire window */
+  /* Style the video: 100% width and height to cover the entire window */
 #intro {
   position: sticky;
   right: 0;
@@ -121,78 +121,73 @@ html {
   </ul>
 </nav>
 
+
 <!----------------------- NAV BAR ends here ----------------------->
 
-</head>
-
-<!---------------------------------     HTML codes   --------------------------------->
-<body>
-	<section>
-<!-- The video --> <div class="w3-container w3-padding-32 w3-center">
-<video autoplay muted loop id="myintro">
-  <source src="alo/intro.mp4" type="video/mp4">
-</video>
-</div>
-<!-- Optional: some overlay text to describe the video -->
- <div class="w3-container w3-padding-32 w3-center">
-  <img src="alo/BOM.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="400" height="400">
-  <br>
-  <br>
-  <p>“This is the pinnacle of human emotions,<br>Warmer than hope. Deeper than despair. It is love.”</p> <br>
-</div>
-</section>
-
-<!--------------------------------- About us page ---------------------->
-<!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">  
-    <h1 class="w3-xxxlarge"><b>About me</b></h1><br>
-    <div class="w3-padding-32">
-      <h3><b>Book of magic</b></h3>
-       <img src="alo/logo.png" alt="Me" class="w3-image" style="display:block;margin:auto" width="250" height="250">
-      <h6>Create me</h6> <br>
-      <p>My full name is Pham Phuong Huyen, but i prefer being called by my artist name Rie.<br>I am illustrator who is passionate, romantic and hopeful about life.</p>
-    </div>
-  </div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-10 w3-center" id="food">
-    <div class="w3-quarter">
-      <img src="alo/illustration.jpg" alt="Illustration" style="width:100%">
-      <h3>Illustration</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="alo/concept.jpg" alt="Concept" style="width:100%">
-      <h3>Concept</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="alo/chibi.jpg" alt="Chibi" style="width:100%">
-      <h3>Chibi</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-      <p>What else?</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="alo/uiux.jpg" alt="UI/UX" style="width:100%">
-      <h3>UI/UX Design</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-    </div>
+<body>
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div>
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <br>
+  <h1 class="w3-xxxlarge"><b>Gallery</b></h1>
+  <!--<h1><b>Gallery</b></h1> -->
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Tap for white space</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="alo/10.jpg" style="width:100%">
+    <img src="alo/11.jpg" style="width:100%">
+    <img src="alo/12.jpg" style="width:100%">
+    <img src="alo/13.jpg" style="width:100%">
+    <!--<img src="Images 1303/r6.jpg" style="width:100%">-->
+  </div>
+
+  <div class="w3-third">
+    <img src="alo/1.jpg" style="width:100%">
+    <img src="alo/6.jpg" style="width:100%">
+    <img src="alo/5.jpg" style="width:100%">
+    <img src="alo/2.jpg" style="width:100%">
+    <img src="alo/3.jpg" style="width:100%">
+   <!-- <img src="Images 1303/p6.jpg" style="width:100%">-->
+  </div>
+
+  <div class="w3-third">
+    <img src="alo/15.jpg" style="width:100%">
+    <img src="alo/16.jpg" style="width:100%">
   </div>
 </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- java for toggle button for spacing between images (optional)-->
+
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+</script>
 </body>
- 
-
-
-
-
 
 <section>
 
 </html>
-<!-- Footer -->
 <style>
 .footer {
   position: sticky;   /* you can give position as "sticky" or "fixed"  */
